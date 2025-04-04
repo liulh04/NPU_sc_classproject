@@ -1,0 +1,54 @@
+# project_name: 灯光控制系统
+# back_ground: ./images/back_ground.png
+# trigger_sensor: light
+# trigger_sensor_type: number
+# trigger_sensor_name: 光照强度
+# trigger_sensor_unit: Lux
+# respond_open_trigger_status: 30000
+# respond_close_trigger_status: 30000
+# respond_sensor: lamp
+# respond_sensor_name: 灯的状态
+# respond_sensor_open_img: ./images/open.png
+# respond_sensor_close_img: ./images/close.png
+
+project_name: 智能灌溉系统
+back_ground: ./images/back_ground.png
+trigger_sensor: soilhum
+trigger_sensor_type: number
+trigger_sensor_name: 土壤湿度
+trigger_sensor_unit: "%"
+respond_open_trigger_status: 50
+respond_close_trigger_status: 50
+respond_sensor: irrigated
+respond_sensor_name: 喷淋的状态
+respond_sensor_open_img: ./images/irrigated_open.png
+respond_sensor_close_img: ./images/irrigated_close.png
+
+# project_name: 智能风扇控制系统
+# back_ground: ./images/back_ground.png
+# trigger_sensor: tem
+# trigger_sensor_type: number
+# trigger_sensor_name: 空气温度
+# trigger_sensor_unit: "℃"
+# respond_open_trigger_status: 18
+# respond_close_trigger_status: 18
+# respond_sensor: fan
+# respond_sensor_name: 风扇状态
+# respond_sensor_open_img: ./images/fan_open.png
+# respond_sensor_close_img: ./images/fan_close.png
+
+# project_name: 智能报警系统
+# back_ground: ./images/back_ground.png
+# trigger_sensor: infrared
+# trigger_sensor_type: boolean
+# trigger_sensor_name: 人体红外状态
+# trigger_sensor_true_cn: 有人
+# trigger_sensor_false_cn: 无人
+# trigger_sensor_unit: ""
+# respond_open_trigger_status: True
+# respond_close_trigger_status: False
+# respond_sensor: alarm
+# respond_sensor_name: 报警器的状态
+# respond_sensor_open_img: ./images/alarm_open.png
+# respond_sensor_close_img: ./images/alarm_close.png
+

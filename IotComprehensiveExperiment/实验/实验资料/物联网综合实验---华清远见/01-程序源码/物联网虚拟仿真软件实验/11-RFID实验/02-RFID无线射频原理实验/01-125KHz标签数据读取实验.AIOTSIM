@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExpermentInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <userInfo>
+    <experDes />
+  </userInfo>
+  <baseDataList>
+    <BaseData xsi:type="ComputerData">
+      <cellData>
+        <lineBaseDic>
+          <item>
+            <key>
+              <string>-84440_0|-30920_0</string>
+            </key>
+            <value>
+              <ArrayOfLineArray>
+                <LineArray>
+                  <lineLength>141.893158</lineLength>
+                  <lineDir>horizontal</lineDir>
+                  <isFirstLine>true</isFirstLine>
+                  <isEndLine>false</isEndLine>
+                </LineArray>
+                <LineArray>
+                  <lineLength>123.806252</lineLength>
+                  <lineDir>vertical</lineDir>
+                  <isFirstLine>false</isFirstLine>
+                  <isEndLine>true</isEndLine>
+                </LineArray>
+              </ArrayOfLineArray>
+            </value>
+          </item>
+        </lineBaseDic>
+        <localPosition>
+          <x>174.224365</x>
+          <y>229.789978</y>
+          <z>0</z>
+        </localPosition>
+      </cellData>
+      <id>-30920</id>
+      <equipId>0</equipId>
+      <name>虚拟电脑_0</name>
+      <dataNameType>虚拟电脑</dataNameType>
+      <cellAlias>soilTemHum</cellAlias>
+      <comList>
+        <string>USB_RFID_1356M0</string>
+        <string>USB_RFID_125K0</string>
+      </comList>
+      <baudRateList>
+        <int>0</int>
+        <int>0</int>
+      </baudRateList>
+      <isScratchInteraction>false</isScratchInteraction>
+    </BaseData>
+    <BaseData xsi:type="RFID125KData">
+      <cellData>
+        <lineBaseDic />
+        <localPosition>
+          <x>-76.7778549</x>
+          <y>24.8237457</y>
+          <z>0</z>
+        </localPosition>
+      </cellData>
+      <id>-84440</id>
+      <equipId>0</equipId>
+      <name>125KHz低频读写器_0</name>
+      <dataNameType>_125KHz低频读写器</dataNameType>
+      <cellAlias>soilTemHum</cellAlias>
+      <rs232Rare>
+        <useLength>0005</useLength>
+        <baudRate>0</baudRate>
+      </rs232Rare>
+      <communMode>0</communMode>
+      <dataSource>0</dataSource>
+    </BaseData>
+    <BaseData xsi:type="_125KLabelData">
+      <cellData>
+        <lineBaseDic />
+        <localPosition>
+          <x>-115.667252</x>
+          <y>-144.56044</y>
+          <z>0</z>
+        </localPosition>
+      </cellData>
+      <id>-85484</id>
+      <equipId>0</equipId>
+      <name>125KHz低频标签_0</name>
+      <dataNameType>_125KHz低频标签</dataNameType>
+      <cellAlias>soilTemHum</cellAlias>
+      <isCanRead>true</isCanRead>
+      <isCanWrite>false</isCanWrite>
+      <labelId>0</labelId>
+      <LabelId>0000000000</LabelId>
+    </BaseData>
+  </baseDataList>
+  <version>v1.4.20f1</version>
+</ExpermentInfo>

@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExpermentInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <userInfo>
+    <experDes />
+  </userInfo>
+  <baseDataList>
+    <BaseData xsi:type="ComputerData">
+      <cellData>
+        <lineBaseDic>
+          <item>
+            <key>
+              <string>-84680_0|-30920_0</string>
+            </key>
+            <value>
+              <ArrayOfLineArray>
+                <LineArray>
+                  <lineLength>147.0416</lineLength>
+                  <lineDir>horizontal</lineDir>
+                  <isFirstLine>true</isFirstLine>
+                  <isEndLine>false</isEndLine>
+                </LineArray>
+                <LineArray>
+                  <lineLength>173.953629</lineLength>
+                  <lineDir>vertical</lineDir>
+                  <isFirstLine>false</isFirstLine>
+                  <isEndLine>true</isEndLine>
+                </LineArray>
+              </ArrayOfLineArray>
+            </value>
+          </item>
+        </lineBaseDic>
+        <localPosition>
+          <x>121.498413</x>
+          <y>242.383179</y>
+          <z>0</z>
+        </localPosition>
+      </cellData>
+      <id>-30920</id>
+      <equipId>0</equipId>
+      <name>虚拟电脑_0</name>
+      <dataNameType>虚拟电脑</dataNameType>
+      <cellAlias>soilTemHum</cellAlias>
+      <comList>
+        <string>USB_RFID_1356M0</string>
+        <string>USB_RFID_915M0</string>
+      </comList>
+      <baudRateList>
+        <int>0</int>
+        <int>0</int>
+      </baudRateList>
+      <isScratchInteraction>false</isScratchInteraction>
+    </BaseData>
+    <BaseData xsi:type="RFID915MData">
+      <cellData>
+        <lineBaseDic />
+        <localPosition>
+          <x>-134.652252</x>
+          <y>-12.7304306</y>
+          <z>0</z>
+        </localPosition>
+      </cellData>
+      <id>-84680</id>
+      <equipId>0</equipId>
+      <name>915MHz超高频读写器_0</name>
+      <dataNameType>_915MHz超高频读写器</dataNameType>
+      <cellAlias>soilTemHum</cellAlias>
+      <rs232Rare>
+        <useLength>0004</useLength>
+        <baudRate>0</baudRate>
+      </rs232Rare>
+      <communMode>0</communMode>
+      <dataSource>0</dataSource>
+      <accesspd>00000000</accesspd>
+      <killpd>00000000</killpd>
+      <areaSelect>0</areaSelect>
+    </BaseData>
+    <BaseData xsi:type="_915LabelData">
+      <cellData>
+        <lineBaseDic />
+        <localPosition>
+          <x>-160.605789</x>
+          <y>-151.474243</y>
+          <z>0</z>
+        </localPosition>
+      </cellData>
+      <id>-85556</id>
+      <equipId>0</equipId>
+      <name>915MHz超高频标签_0</name>
+      <dataNameType>_915MHz超高频标签</dataNameType>
+      <cellAlias>soilTemHum</cellAlias>
+      <isCanRead>true</isCanRead>
+      <isCanWrite>true</isCanWrite>
+      <labelId>0</labelId>
+      <data>
+        <EPC_id>0</EPC_id>
+        <CRC>FE 37 </CRC>
+        <PC>3000</PC>
+        <coreEPC>63146A6DCFA416B223AC7871</coreEPC>
+        <EPC>FE 37 300063146A6DCFA416B223AC78710000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</EPC>
+        <TID>4851594ADCFA416B223AC787</TID>
+        <password>0000000000000000</password>
+        <user>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</user>
+        <isExit>false</isExit>
+      </data>
+    </BaseData>
+  </baseDataList>
+  <version>v1.4.20f1</version>
+</ExpermentInfo>

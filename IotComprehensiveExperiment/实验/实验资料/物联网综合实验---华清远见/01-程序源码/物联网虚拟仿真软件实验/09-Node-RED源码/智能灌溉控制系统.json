@@ -1,0 +1,178 @@
+[
+    {
+        "id": "9013bc1d1e2e1a98",
+        "type": "tab",
+        "label": "流程 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "1987e117ebfe48f8",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "127.0.0.1",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "7ff76f0958c874b0",
+        "type": "mqtt in",
+        "z": "9013bc1d1e2e1a98",
+        "name": "",
+        "topic": "AIOTSIM2APP",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "1987e117ebfe48f8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 330,
+        "y": 420,
+        "wires": [
+            [
+                "688af25dfb3353e6"
+            ]
+        ]
+    },
+    {
+        "id": "688af25dfb3353e6",
+        "type": "switch",
+        "z": "9013bc1d1e2e1a98",
+        "name": "",
+        "property": "payload.soilhum",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "50",
+                "vt": "str"
+            },
+            {
+                "t": "lte",
+                "v": "50",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 510,
+        "y": 420,
+        "wires": [
+            [
+                "dddf419364c43482"
+            ],
+            [
+                "24998c395deb0e9c"
+            ]
+        ]
+    },
+    {
+        "id": "dddf419364c43482",
+        "type": "template",
+        "z": "9013bc1d1e2e1a98",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\"irrigated\":false,\"id\":0}",
+        "output": "json",
+        "x": 700,
+        "y": 340,
+        "wires": [
+            [
+                "a39d4a7c4a955f90",
+                "b020e6d8292f1562"
+            ]
+        ]
+    },
+    {
+        "id": "24998c395deb0e9c",
+        "type": "template",
+        "z": "9013bc1d1e2e1a98",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\"irrigated\":true,\"id\":0}",
+        "output": "json",
+        "x": 690,
+        "y": 500,
+        "wires": [
+            [
+                "b020e6d8292f1562",
+                "c9a70cdac6490947"
+            ]
+        ]
+    },
+    {
+        "id": "b020e6d8292f1562",
+        "type": "mqtt out",
+        "z": "9013bc1d1e2e1a98",
+        "name": "",
+        "topic": "APP2AIOTSIM",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "1987e117ebfe48f8",
+        "x": 910,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "a39d4a7c4a955f90",
+        "type": "debug",
+        "z": "9013bc1d1e2e1a98",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "c9a70cdac6490947",
+        "type": "debug",
+        "z": "9013bc1d1e2e1a98",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 520,
+        "wires": []
+    }
+]

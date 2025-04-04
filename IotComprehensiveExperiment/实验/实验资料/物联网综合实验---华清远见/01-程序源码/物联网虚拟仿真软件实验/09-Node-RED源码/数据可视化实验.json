@@ -1,0 +1,319 @@
+[
+    {
+        "id": "31e5fd3ad70a266a",
+        "type": "tab",
+        "label": "流程 4",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "1987e117ebfe48f8",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "127.0.0.1",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "828c17251320f40c",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "",
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d615515152cfa3c0",
+        "type": "ui_tab",
+        "name": "物联网虚拟仿真系统",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "0ca74655a55b2574",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "e4d6675e283ee9cc",
+        "type": "ui_group",
+        "name": "智能风扇控制系统",
+        "tab": "d615515152cfa3c0",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "651c45cd5d3260ec",
+        "type": "mqtt in",
+        "z": "31e5fd3ad70a266a",
+        "name": "",
+        "topic": "AIOTSIM2APP",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "1987e117ebfe48f8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 380,
+        "y": 480,
+        "wires": [
+            [
+                "1686710b2c6e2bc1"
+            ]
+        ]
+    },
+    {
+        "id": "633b2cb9c58567a9",
+        "type": "mqtt out",
+        "z": "31e5fd3ad70a266a",
+        "name": "",
+        "topic": "APP2AIOTSIM",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "1987e117ebfe48f8",
+        "x": 980,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "1686710b2c6e2bc1",
+        "type": "switch",
+        "z": "31e5fd3ad70a266a",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "hask",
+                "v": "tem",
+                "vt": "str"
+            },
+            {
+                "t": "hask",
+                "v": "fan",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 580,
+        "y": 480,
+        "wires": [
+            [
+                "cb8c40dac6ffbccc"
+            ],
+            [
+                "2e4b79640f105f2e"
+            ]
+        ]
+    },
+    {
+        "id": "9c502153a995dcdd",
+        "type": "ui_gauge",
+        "z": "31e5fd3ad70a266a",
+        "name": "",
+        "group": "e4d6675e283ee9cc",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "温度℃",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "-40",
+        "max": "80",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 950,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "2e4b79640f105f2e",
+        "type": "ui_switch",
+        "z": "31e5fd3ad70a266a",
+        "name": "",
+        "label": "风扇开关",
+        "tooltip": "",
+        "group": "e4d6675e283ee9cc",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "true",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "{\"fan\":true,\"id\":0}",
+        "onvalueType": "json",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "{\"fan\":false,\"id\":0}",
+        "offvalueType": "json",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 780,
+        "y": 540,
+        "wires": [
+            [
+                "633b2cb9c58567a9"
+            ]
+        ]
+    },
+    {
+        "id": "cb8c40dac6ffbccc",
+        "type": "change",
+        "z": "31e5fd3ad70a266a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.tem",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 420,
+        "wires": [
+            [
+                "9c502153a995dcdd"
+            ]
+        ]
+    }
+]

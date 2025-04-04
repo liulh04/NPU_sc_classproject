@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExpermentInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <userInfo>
+    <experDes />
+  </userInfo>
+  <baseDataList>
+    <BaseData xsi:type="ComputerData">
+      <cellData>
+        <lineBaseDic>
+          <item>
+            <key>
+              <string>-84200_0|-30920_0</string>
+            </key>
+            <value>
+              <ArrayOfLineArray>
+                <LineArray>
+                  <lineLength>109.780769</lineLength>
+                  <lineDir>horizontal</lineDir>
+                  <isFirstLine>true</isFirstLine>
+                  <isEndLine>false</isEndLine>
+                </LineArray>
+                <LineArray>
+                  <lineLength>125.325241</lineLength>
+                  <lineDir>vertical</lineDir>
+                  <isFirstLine>false</isFirstLine>
+                  <isEndLine>true</isEndLine>
+                </LineArray>
+              </ArrayOfLineArray>
+            </value>
+          </item>
+        </lineBaseDic>
+        <localPosition>
+          <x>151.372482</x>
+          <y>241.739456</y>
+          <z>0</z>
+        </localPosition>
+      </cellData>
+      <id>-30920</id>
+      <equipId>0</equipId>
+      <name>虚拟电脑_0</name>
+      <dataNameType>虚拟电脑</dataNameType>
+      <cellAlias>soilTemHum</cellAlias>
+      <comList>
+        <string>USB_RFID_1356M0</string>
+        <string>USB_RFID_125K0</string>
+        <string>USB_RFID_24G0</string>
+      </comList>
+      <baudRateList>
+        <int>0</int>
+        <int>0</int>
+        <int>0</int>
+      </baudRateList>
+      <isScratchInteraction>true</isScratchInteraction>
+    </BaseData>
+    <BaseData xsi:type="RFID24GData">
+      <cellData>
+        <lineBaseDic />
+        <localPosition>
+          <x>-66.40735</x>
+          <y>35.1942177</y>
+          <z>0</z>
+        </localPosition>
+      </cellData>
+      <id>-84200</id>
+      <equipId>0</equipId>
+      <name>2.4GHz微波读写器_0</name>
+      <dataNameType>_2_4GHz微波读写器</dataNameType>
+      <cellAlias>soilTemHum</cellAlias>
+      <rs232Rare>
+        <useLength>0004</useLength>
+        <baudRate>0</baudRate>
+      </rs232Rare>
+      <communMode>0</communMode>
+      <dataSource>0</dataSource>
+      <receiveAddress>1010101010</receiveAddress>
+    </BaseData>
+    <BaseData xsi:type="_24GLabelData">
+      <cellData>
+        <lineBaseDic />
+        <localPosition>
+          <x>-148.259521</x>
+          <y>-151.256668</y>
+          <z>0</z>
+        </localPosition>
+      </cellData>
+      <id>-85412</id>
+      <equipId>0</equipId>
+      <name>2.4GHz微波标签_0</name>
+      <dataNameType>_2_4GHz微波标签</dataNameType>
+      <cellAlias>soilTemHum</cellAlias>
+      <isCanRead>true</isCanRead>
+      <isCanWrite>false</isCanWrite>
+      <labelId>0</labelId>
+      <LabelId>31F721AA</LabelId>
+      <sendAddress>1010101010</sendAddress>
+    </BaseData>
+  </baseDataList>
+  <version>v1.4.21f1</version>
+</ExpermentInfo>
