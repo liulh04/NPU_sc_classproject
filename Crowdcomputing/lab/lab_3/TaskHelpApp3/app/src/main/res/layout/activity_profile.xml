@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/user_info_text"
+        android:layout_width="wrap_content"
+        android:layout_height="127dp"
+        android:layout_marginBottom="20dp"
+        android:text="姓名: 张三\n年龄: 25\n职业: 程序员\n账号ID: 123456"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edit_user_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="修改资料"
+        android:inputType="text"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="返回"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="保存"
+        android:textSize="16sp" />
+</LinearLayout>

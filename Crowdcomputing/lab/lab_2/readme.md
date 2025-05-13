@@ -1,7 +1,6 @@
 # 群智计算系统实验第二周总结报告
 
 
-
 ## 实验目的
 1. 掌握虚拟机环境搭建与配置
 2. 完成Ubuntu系统的安装部署
@@ -240,5 +239,5 @@ rqt_graph
 
 Author: **liulanker**  
 Date: 2025-03-30  
-Contact: liulanker@gmail.co'mom
+Contact: liulanker@gmail.com
  
