@@ -201,9 +201,10 @@ $$
 &\quad \tau_{ijk} \geq \alpha_{ijk} - \beta_{ijk}, \\
 &\quad \tau_{ijk} \geq 0, \\
 &\quad z_{ijk}^\alpha, z_{ijk}^\beta \in \{0,1\}\\
+&\\
+&\\
+&\quad  z_{ijk}^\alpha, z_{ijk}^\beta 是二元变量，用于指示  \alpha_{ijk} 和  \beta_{ijk}的取值。\\
 &\end{cases}
-&\\
-&\\
 &\\
 &\quad y_{ij} \in \{0,1\}, \quad \forall i,j \in \{1,...,n\} \\
 &\quad u_{jk} \in \{0,1\}, \quad \forall j \in \{1,...,m\}, \forall k \in \{1,...,K\}\\
@@ -272,16 +273,34 @@ def calculate_C(p):
 
 ### 3.2 `Python`使用启发式算法解决
 
-[遗传算法求解](../code/alth.py)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;基于遗传算法求解 PFSP 问题，需要首先对问题进行编码，将调度方案映射到染色体上。一种常用的编码方式是利用工件的排序来表示染色体，例如，如果共有 5 个工件，则染色体可以表示为 (1, 3, 2, 5, 4)，表示工件 1 首先被加工，然后是工件 3，以此类推。
 
-完整代码附录中给出
-
-[代码详细设计文档](./design.md)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;遗传算法中，适应度函数用来评估每个个体的优劣程度。在 PFSP 问题中，适应度函数通常定义为总加工时间，目标是找到使总加工时间最小的调度方案。
 
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;所使用的遗传算法的选择逻辑采用锦标赛选择机制，其核心是通过局部竞争筛选优质个体。
 
 
+`selection()`方法中，部分关键代码如下：
+```python
+def selection(self):
+    tournament_size = 3  # 锦标赛规模
+    selected = []
+    for _ in range(self.pop_size):
+        # 随机选取3个个体参赛
+        candidates = random.sample(self.population, tournament_size)
+        # 选择成本最低的个体胜出（适应度=1/成本）
+        winner = min(candidates, key=lambda x: self.evaluate(x))
+        selected.append(winner.copy())
+    return selected
+```
 
+---
+
+设计细节参考design文档
+
+[design.md](https://gitee.com/lankerliu/NPU_sc_classproject/tree/main/ManagerialOperations/finalproject/src/design.md)
+ 
 
 ## 4. 最优调度方案
 
@@ -409,6 +428,7 @@ gantt
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;对此，为了更深一步的验证`cplex`的求解结果，我选择禁用最先的（J5→J1→J2→J3→J4）解，然后运行得到了：
+
 ![](../outputs/solutionafter1st.png)
 
 第二个最优解：
@@ -438,21 +458,29 @@ gantt
 ## 附录：完整求解代码
 
 - 多解结果可视化对比
-[可视化对比](../src/compare.md)
+[可视化对比](https://gitee.com/lankerliu/NPU_sc_classproject/tree/main/ManagerialOperations/finalproject/src/compare.md)
 
 
 - `cplex`调用求解
-[未屏蔽初始解版本](../code/app.py)
-[屏蔽初始解版本](../code/app2.py)
+[未屏蔽初始解版本](https://gitee.com/lankerliu/NPU_sc_classproject/tree/main/ManagerialOperations/finalproject/code/app.py)
+[屏蔽初始解版本](https://gitee.com/lankerliu/NPU_sc_classproject/tree/main/ManagerialOperations/finalproject/code/app2.py)
 
 
 
 - 启发式算法`遗传算法`
-[Algorithm](../code/app2.py)
+[Algorithm](https://gitee.com/lankerliu/NPU_sc_classproject/tree/main/ManagerialOperations/finalproject/code/app2.py)
 
 - Jupyter ipython notebook 记录
-[python](../notebook/python.ipynb)
+[python](https://gitee.com/lankerliu/NPU_sc_classproject/tree/main/ManagerialOperations/finalproject/notebook/python.ipynb)
 
 ## 参考资料
 
+[1] [遗传算法详解与实现](https://blog.csdn.net/LOVEmy134611/article/details/111639624?fromshare=blogdetail&sharetype=blogdetail&sharerId=111639624&sharerefer=PC&sharesource=LLH004&sharefrom=from_link)
+
+[2] [遗传算法核心算子解析](https://blog.csdn.net/LOVEmy134611/article/details/142038465?fromshare=blogdetail&sharetype=blogdetail&sharerId=142038465&sharerefer=PC&sharesource=LLH004&sharefrom=from_link)
+
+
+[3] 王书婷.基于遗传变邻域算法的置换流水车间调度问题研究[D].华中科技大学[2024-06-20].DOI:10.7666/d.D413934.
+
+[4] 王书婷.基于遗传变邻域算法的置换流水车间调度问题研究[D].华中科技大学[2024-06-20].
 

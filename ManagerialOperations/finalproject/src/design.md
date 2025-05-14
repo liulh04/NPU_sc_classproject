@@ -54,7 +54,7 @@ graph TD
 | 算子类型 | 实现方式 | 参数设置 |
 |---------|---------|---------|
 | 选择     | 轮盘赌选择 | 适应度=1/成本 |
-| 交叉     | 顺序交叉(OX) | Pc=0.8 |
+| 交差     | 顺序交叉(OX) | Pc=0.8 |
 | 变异     | 交换变异 | Pm=0.2 |
 
 ## 4. 核心类说明
@@ -86,16 +86,15 @@ class Scheduler:
 | 时间复杂度 | O(pop_size × max_gen × n_jobs × n_machines) |
 | 空间复杂度 | O(pop_size × n_jobs) |
 | 最优性保证 | 通过精英保留策略避免最优解丢失 |
-| 并行潜力 | 适应度评估可并行化 |
+
 
 ## 6. 示例输出 
  
-![](../outputs/)
+![](../outputs/algooutputs.png)
 
 ## 7. 参考文献
 
-1. Reeves, C. R. (1995). *A genetic algorithm for flowshop sequencing*. Computers & Operations Research.
-2. Wang, Y. (2014). *Energy-efficient scheduling in manufacturing*. Springer.
+
 
  
 ## 附录：参数配置表
