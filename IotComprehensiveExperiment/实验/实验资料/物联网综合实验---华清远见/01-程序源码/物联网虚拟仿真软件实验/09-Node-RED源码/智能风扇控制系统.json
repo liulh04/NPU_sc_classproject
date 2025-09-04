@@ -1,0 +1,177 @@
+[
+    {
+        "id": "f051d31fa56e026a",
+        "type": "tab",
+        "label": "流程 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "1987e117ebfe48f8",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "127.0.0.1",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "dd7bbfd11c0a3e06",
+        "type": "mqtt in",
+        "z": "f051d31fa56e026a",
+        "name": "",
+        "topic": "SoftWareToScratch",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "1987e117ebfe48f8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 340,
+        "y": 420,
+        "wires": [
+            [
+                "6802b0694e9be6ce"
+            ]
+        ]
+    },
+    {
+        "id": "6802b0694e9be6ce",
+        "type": "switch",
+        "z": "f051d31fa56e026a",
+        "name": "",
+        "property": "payload.tem",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "30",
+                "vt": "str"
+            },
+            {
+                "t": "lte",
+                "v": "30",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 510,
+        "y": 420,
+        "wires": [
+            [
+                "c644a603aba64fdf"
+            ],
+            [
+                "5d575abbd38257ad"
+            ]
+        ]
+    },
+    {
+        "id": "c644a603aba64fdf",
+        "type": "template",
+        "z": "f051d31fa56e026a",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\"fan\":true,\"id\":0}",
+        "output": "json",
+        "x": 700,
+        "y": 340,
+        "wires": [
+            [
+                "78efe567c9807567",
+                "1122038a935cd36a"
+            ]
+        ]
+    },
+    {
+        "id": "5d575abbd38257ad",
+        "type": "template",
+        "z": "f051d31fa56e026a",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\"fan\":false,\"id\":0}",
+        "output": "json",
+        "x": 690,
+        "y": 500,
+        "wires": [
+            [
+                "78efe567c9807567",
+                "dbce68aeb09eedad"
+            ]
+        ]
+    },
+    {
+        "id": "78efe567c9807567",
+        "type": "mqtt out",
+        "z": "f051d31fa56e026a",
+        "name": "",
+        "topic": "ScratchToSoftWare",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "1987e117ebfe48f8",
+        "x": 920,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "1122038a935cd36a",
+        "type": "debug",
+        "z": "f051d31fa56e026a",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "dbce68aeb09eedad",
+        "type": "debug",
+        "z": "f051d31fa56e026a",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 520,
+        "wires": []
+    }
+]

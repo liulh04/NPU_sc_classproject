@@ -1,0 +1,52 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.taskhelpapp">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TaskHelpApp"
+        tools:targetApi="31">
+
+        <!-- MainActivity 声明 -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- HelpTaskActivity 声明 -->
+        <activity
+            android:name=".HelpTaskActivity"
+            android:exported="true" />
+
+        <!-- PublishTaskActivity 声明 -->
+        <activity
+            android:name=".PublishTaskActivity"
+            android:exported="true" />
+
+        <!-- ProfileActivity 声明 -->
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="true" />
+
+        <!-- 添加百度地图的 API Key -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="Fwd8go0yDE2ce8FWLraGBQWViSvyy3SI" />
+
+        <activity android:name=".HelpTaskDetailActivity">
+            <!-- 其他配置 -->
+        </activity>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,21 @@
+<project name="ximi-mall">
+    <!-- 定义左侧banner -->
+    <bannerLeft>
+    <name>Sonatype</name>
+        <src>https://raw.githubusercontent.com/li-haoyang1/CrowdOS/master/src/site/resources/images/logo.jpg</src>
+        <height>200</height>
+        <width>400</width>
+        <href>https://github.com/crowdosNWPU/CrowdOS?tab=readme-ov-file</href>
+    </bannerLeft>
+    <version position="righ"></version>
+    <!--定义菜单栏 -->
+    <body>
+        <menu ref="reports"/>
+    </body>
+    <!-- 定义皮肤 -->
+    <skin>
+        <groupId>org.apache.maven.skins</groupId>
+        <artifactId>maven-fluido-skin</artifactId>
+        <version>1.9</version>
+    </skin>
+</project>

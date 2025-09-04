@@ -1,0 +1,1 @@
+伽玛分布是统计学的一种连续概率函数。Gamma分布中的参数α称为形状参数（shape parameter），β称为尺度参数（scale parameter），意义是假设随机变量X为等到第α件事发生所需之等候时间。Gamma分布也可以看成Possion分布在正实数集上的连续化版本。

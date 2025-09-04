@@ -1,0 +1,13 @@
+{
+  "Products": ["I", "II", "III"],
+  "Resources": ["A", "B", "C"],
+  "Consumption": {
+    "A": [2, 4, 8],
+    "B": [2, 3, 4],
+    "C": [1, 2, 3]
+  },
+  "ResourceLimit": [600, 400, 250],
+  "VariableCost": [5, 4, 6],
+  "FixedCost": [100, 150, 200],
+  "Price": [8, 10, 14]
+}

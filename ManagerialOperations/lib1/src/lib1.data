@@ -1,0 +1,18 @@
+# lib1.data
+
+# 利润系数
+profit_coefficients = [15, 12, 10, 8, 7]
+
+# 铸造工时系数
+casting_hours = [5, 0, 10, 0, 7]
+
+# 机加工工时系数
+machining_hours = [7, 7, 5, 5, 8]
+
+# 装配工时系数
+assembly_hours = [3, 3, 2, 2, 2]
+
+# 资源总量
+casting_limit = 8000
+machining_limit = 12000
+assembly_limit = 10000

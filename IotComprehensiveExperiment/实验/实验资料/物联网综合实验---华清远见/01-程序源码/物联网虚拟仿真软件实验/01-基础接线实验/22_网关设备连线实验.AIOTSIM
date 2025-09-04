@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExpermentInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <version>v2.0.2f1</version>
+  <userInfo>
+    <experDes>结合超高频RFID模块实现货物数量盘点。</experDes>
+  </userInfo>
+  <baseDataList>
+    <BaseData xsi:type="GateWayData">
+      <cellData>
+        <lineBaseDic>
+          <item>
+            <key>
+              <string>-76148_0|-74472_0</string>
+            </key>
+            <value>
+              <ArrayOfLineArray>
+                <LineArray>
+                  <lineLength>35.5155334</lineLength>
+                  <lineDir>vertical</lineDir>
+                  <isFirstLine>true</isFirstLine>
+                  <isEndLine>false</isEndLine>
+                </LineArray>
+                <LineArray>
+                  <lineLength>41.415802</lineLength>
+                  <lineDir>horizontal</lineDir>
+                  <isFirstLine>false</isFirstLine>
+                  <isEndLine>true</isEndLine>
+                </LineArray>
+              </ArrayOfLineArray>
+            </value>
+          </item>
+        </lineBaseDic>
+        <localPosition>
+          <x>-483.2058</x>
+          <y>574.7626</y>
+          <z>0</z>
+        </localPosition>
+      </cellData>
+      <isCustomComponent>false</isCustomComponent>
+      <id>-74472</id>
+      <equipId>0</equipId>
+      <name>M3网关单元_0</name>
+      <dataNameType>M3网关单元</dataNameType>
+      <cellAlias>soilTemHum</cellAlias>
+      <wiredData>
+        <wiredDataList />
+        <RS485Mode>0</RS485Mode>
+        <baudRate>0</baudRate>
+      </wiredData>
+      <wiredlessData>
+        <wireless30DataList />
+        <wireless21DataList>
+          <Wiredless21Data>
+            <protocol21>
+              <type>34</type>
+              <address>0034</address>
+              <dataLength>01</dataLength>
+            </protocol21>
+            <transportType>5A</transportType>
+            <fsParamData>
+              <string>obn_touchKey</string>
+            </fsParamData>
+            <id>0</id>
+          </Wiredless21Data>
+          <Wiredless21Data>
+            <protocol21>
+              <type>4C</type>
+              <address>002A</address>
+              <dataLength>02</dataLength>
+            </protocol21>
+            <transportType>42</transportType>
+            <fsParamData>
+              <string>obn_photosensitive</string>
+            </fsParamData>
+            <id>0</id>
+          </Wiredless21Data>
+        </wireless21DataList>
+        <zigbee>true</zigbee>
+        <zpanID>0001</zpanID>
+        <ble>true</ble>
+        <uuID>0002</uuID>
+        <ipv6>false</ipv6>
+        <iPanID />
+        <lora>false</lora>
+        <lPanID />
+        <nb>false</nb>
+        <wifi>false</wifi>
+        <ssID />
+        <password />
+        <version>1</version>
+      </wiredlessData>
+    </BaseData>
+    <BaseData xsi:type="PowerData">
+      <cellData>
+        <lineBaseDic />
+        <localPosition>
+          <x>-489.0817</x>
+          <y>391.877</y>
+          <z>0</z>
+        </localPosition>
+      </cellData>
+      <isCustomComponent>false</isCustomComponent>
+      <id>-76148</id>
+      <equipId>0</equipId>
+      <name>USB5V_0</name>
+      <dataNameType>USB5V</dataNameType>
+      <cellAlias>soilTemHum</cellAlias>
+    </BaseData>
+    <BaseData xsi:type="OneButtonNodeData">
+      <cellData>
+        <lineBaseDic />
+        <localPosition>
+          <x>-143.876</x>
+          <y>357.356476</y>
+          <z>0</z>
+        </localPosition>
+      </cellData>
+      <isCustomComponent>false</isCustomComponent>
+      <id>-162274</id>
+      <equipId>0</equipId>
+      <name>一键还原节点控制板_0</name>
+      <dataNameType>一键还原节点控制板</dataNameType>
+      <cellAlias>soilTemHum</cellAlias>
+      <wirelessMode>
+        <protocol30 />
+        <protocol21>
+          <type>34</type>
+          <address>0034</address>
+          <dataLength>01</dataLength>
+        </protocol21>
+        <wirelessType>1</wirelessType>
+        <ssId>0001</ssId>
+        <version>1</version>
+      </wirelessMode>
+      <sensorNameType>触摸按键</sensorNameType>
+      <powerSource>0</powerSource>
+      <sensorType>IOSensor</sensorType>
+      <transformat>Fixed</transformat>
+    </BaseData>
+    <BaseData xsi:type="OneButtonNodeData">
+      <cellData>
+        <lineBaseDic />
+        <localPosition>
+          <x>-837.2252</x>
+          <y>258.20166</y>
+          <z>0</z>
+        </localPosition>
+      </cellData>
+      <isCustomComponent>false</isCustomComponent>
+      <id>-74590</id>
+      <equipId>1</equipId>
+      <name>一键还原节点控制板_1</name>
+      <dataNameType>一键还原节点控制板</dataNameType>
+      <cellAlias>soilTemHum</cellAlias>
+      <wirelessMode>
+        <protocol30 />
+        <protocol21>
+          <type>4C</type>
+          <address>002A</address>
+          <dataLength>02</dataLength>
+        </protocol21>
+        <wirelessType>2</wirelessType>
+        <ssId>0002</ssId>
+        <version>1</version>
+      </wirelessMode>
+      <sensorNameType>光敏传感器</sensorNameType>
+      <powerSource>0</powerSource>
+      <sensorType>NumberSensor</sensorType>
+      <transformat>Float</transformat>
+    </BaseData>
+  </baseDataList>
+  <smartGabagesList />
+  <sfmd>
+    <sfbList />
+  </sfmd>
+</ExpermentInfo>

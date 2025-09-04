@@ -1,0 +1,324 @@
+==================================================
+数据预处理报告
+==================================================
+
+1. 数据摘要统计:
+   总文件夹数: 270
+   分布类型数: 15
+   手写样本文件夹数: 173
+   非手写样本文件夹数: 97
+   总文件数: 563
+
+2. 各分布详细统计:
+   ('二项分布', False): 17 个文件
+   ('二项分布', True): 33 个文件
+   ('伯努利分布', False): 13 个文件
+   ('伯努利分布', True): 10 个文件
+   ('伽马分布', False): 5 个文件
+   ('伽马分布', True): 2 个文件
+   ('卡方分布', False): 2 个文件
+   ('卡方分布', True): 9 个文件
+   ('均匀分布', True): 9 个文件
+   ('帕累托分布', True): 2 个文件
+   ('幂律分布', False): 2 个文件
+   ('指数分布', False): 5 个文件
+   ('指数分布', True): 14 个文件
+   ('未知分布_14', True): 4 个文件
+   ('未知分布_15', True): 4 个文件
+   ('正态分布', False): 76 个文件
+   ('正态分布', True): 156 个文件
+   ('泊松分布', False): 72 个文件
+   ('泊松分布', True): 97 个文件
+   ('莱斯分布', False): 2 个文件
+   ('贝塔分布', False): 6 个文件
+   ('贝塔分布', True): 9 个文件
+   ('高斯混合模型', False): 11 个文件
+   ('高斯混合模型', True): 3 个文件
+
+3. 详细文件夹信息:
+  文件夹名称  分布编号    分布名称  是否手写  文件数量                 文件夹路径
+    1_1     1   伯努利分布 False     2     ..\data\data1\1_1
+    1_2     1   伯努利分布 False     3     ..\data\data1\1_2
+    1_3     1   伯努利分布 False     3     ..\data\data1\1_3
+    1_4     1   伯努利分布 False     3     ..\data\data1\1_4
+    1_5     1   伯努利分布 False     2     ..\data\data1\1_5
+  1_10y     1   伯努利分布  True     2   ..\data\data1\1_10y
+   1_6y     1   伯努利分布  True     2    ..\data\data1\1_6y
+   1_7y     1   伯努利分布  True     2    ..\data\data1\1_7y
+   1_8y     1   伯努利分布  True     2    ..\data\data1\1_8y
+   1_9y     1   伯努利分布  True     2    ..\data\data1\1_9y
+   2_11     2    贝塔分布 False     3    ..\data\data1\2_11
+   2_12     2    贝塔分布 False     3    ..\data\data1\2_12
+  2_13y     2    贝塔分布  True     2   ..\data\data1\2_13y
+  2_14y     2    贝塔分布  True     3   ..\data\data1\2_14y
+ 2_217y     2    贝塔分布  True     2  ..\data\data1\2_217y
+ 2_265y     2    贝塔分布  True     2  ..\data\data1\2_265y
+   3_15     3    二项分布 False     2    ..\data\data1\3_15
+   3_16     3    二项分布 False     2    ..\data\data1\3_16
+   3_17     3    二项分布 False     2    ..\data\data1\3_17
+   3_18     3    二项分布 False     2    ..\data\data1\3_18
+   3_19     3    二项分布 False     2    ..\data\data1\3_19
+   3_20     3    二项分布 False     2    ..\data\data1\3_20
+   3_21     3    二项分布 False     2    ..\data\data1\3_21
+   3_22     3    二项分布 False     3    ..\data\data1\3_22
+ 3_230y     3    二项分布  True     2  ..\data\data1\3_230y
+ 3_231y     3    二项分布  True     2  ..\data\data1\3_231y
+  3_23y     3    二项分布  True     2   ..\data\data1\3_23y
+ 3_242y     3    二项分布  True     2  ..\data\data1\3_242y
+ 3_244y     3    二项分布  True     2  ..\data\data1\3_244y
+  3_24y     3    二项分布  True     2   ..\data\data1\3_24y
+  3_25y     3    二项分布  True     2   ..\data\data1\3_25y
+ 3_269y     3    二项分布  True     2  ..\data\data1\3_269y
+  3_26y     3    二项分布  True     2   ..\data\data1\3_26y
+  3_27y     3    二项分布  True     3   ..\data\data1\3_27y
+  3_28y     3    二项分布  True     2   ..\data\data1\3_28y
+  3_29y     3    二项分布  True     2   ..\data\data1\3_29y
+  3_30y     3    二项分布  True     2   ..\data\data1\3_30y
+  3_31y     3    二项分布  True     2   ..\data\data1\3_31y
+  3_32y     3    二项分布  True     2   ..\data\data1\3_32y
+  3_33y     3    二项分布  True     2   ..\data\data1\3_33y
+   4_34     4    伽马分布 False     2    ..\data\data1\4_34
+   4_35     4    伽马分布 False     3    ..\data\data1\4_35
+ 4_225y     4    伽马分布  True     2  ..\data\data1\4_225y
+   5_36     5  高斯混合模型 False     2    ..\data\data1\5_36
+   5_37     5  高斯混合模型 False     3    ..\data\data1\5_37
+   5_38     5  高斯混合模型 False     3    ..\data\data1\5_38
+   5_39     5  高斯混合模型 False     3    ..\data\data1\5_39
+  5_40y     5  高斯混合模型  True     3   ..\data\data1\5_40y
+  6_41y     6    均匀分布  True     2   ..\data\data1\6_41y
+  6_42y     6    均匀分布  True     2   ..\data\data1\6_42y
+  6_43y     6    均匀分布  True     3   ..\data\data1\6_43y
+  6_44y     6    均匀分布  True     2   ..\data\data1\6_44y
+   7_45     7    卡方分布 False     2    ..\data\data1\7_45
+  7_46y     7    卡方分布  True     2   ..\data\data1\7_46y
+  7_47y     7    卡方分布  True     2   ..\data\data1\7_47y
+  7_48y     7    卡方分布  True     3   ..\data\data1\7_48y
+  7_49y     7    卡方分布  True     2   ..\data\data1\7_49y
+   8_50     8    莱斯分布 False     2    ..\data\data1\8_50
+   9_51     9    幂律分布 False     2    ..\data\data1\9_51
+ 10_52y    10   帕累托分布  True     2  ..\data\data1\10_52y
+ 11_222    11    泊松分布 False     2  ..\data\data1\11_222
+  11_53    11    泊松分布 False     2   ..\data\data1\11_53
+  11_54    11    泊松分布 False     2   ..\data\data1\11_54
+  11_55    11    泊松分布 False     2   ..\data\data1\11_55
+  11_56    11    泊松分布 False     2   ..\data\data1\11_56
+  11_57    11    泊松分布 False     2   ..\data\data1\11_57
+  11_58    11    泊松分布 False     2   ..\data\data1\11_58
+  11_59    11    泊松分布 False     2   ..\data\data1\11_59
+  11_60    11    泊松分布 False     2   ..\data\data1\11_60
+  11_61    11    泊松分布 False     2   ..\data\data1\11_61
+  11_62    11    泊松分布 False     2   ..\data\data1\11_62
+  11_63    11    泊松分布 False     2   ..\data\data1\11_63
+  11_64    11    泊松分布 False     2   ..\data\data1\11_64
+  11_65    11    泊松分布 False     2   ..\data\data1\11_65
+  11_66    11    泊松分布 False     2   ..\data\data1\11_66
+  11_67    11    泊松分布 False     2   ..\data\data1\11_67
+  11_68    11    泊松分布 False     2   ..\data\data1\11_68
+  11_69    11    泊松分布 False     3   ..\data\data1\11_69
+  11_70    11    泊松分布 False     3   ..\data\data1\11_70
+  11_71    11    泊松分布 False     3   ..\data\data1\11_71
+  11_72    11    泊松分布 False     3   ..\data\data1\11_72
+  11_73    11    泊松分布 False     3   ..\data\data1\11_73
+  11_74    11    泊松分布 False     2   ..\data\data1\11_74
+  11_75    11    泊松分布 False     3   ..\data\data1\11_75
+  11_76    11    泊松分布 False     3   ..\data\data1\11_76
+  11_77    11    泊松分布 False     3   ..\data\data1\11_77
+  11_78    11    泊松分布 False     2   ..\data\data1\11_78
+  11_79    11    泊松分布 False     1   ..\data\data1\11_79
+  11_80    11    泊松分布 False     1   ..\data\data1\11_80
+  11_81    11    泊松分布 False     3   ..\data\data1\11_81
+  11_82    11    泊松分布 False     1   ..\data\data1\11_82
+  11_83    11    泊松分布 False     1   ..\data\data1\11_83
+  11_84    11    泊松分布 False     1   ..\data\data1\11_84
+  11_85    11    泊松分布 False     2   ..\data\data1\11_85
+11_100y    11    泊松分布  True     2 ..\data\data1\11_100y
+11_101y    11    泊松分布  True     3 ..\data\data1\11_101y
+11_102y    11    泊松分布  True     3 ..\data\data1\11_102y
+11_103y    11    泊松分布  True     3 ..\data\data1\11_103y
+11_104y    11    泊松分布  True     1 ..\data\data1\11_104y
+11_105y    11    泊松分布  True     1 ..\data\data1\11_105y
+11_106y    11    泊松分布  True     1 ..\data\data1\11_106y
+11_107y    11    泊松分布  True     1 ..\data\data1\11_107y
+11_108y    11    泊松分布  True     3 ..\data\data1\11_108y
+11_109y    11    泊松分布  True     2 ..\data\data1\11_109y
+11_110y    11    泊松分布  True     2 ..\data\data1\11_110y
+11_111y    11    泊松分布  True     2 ..\data\data1\11_111y
+11_112y    11    泊松分布  True     2 ..\data\data1\11_112y
+11_113y    11    泊松分布  True     2 ..\data\data1\11_113y
+11_114y    11    泊松分布  True     2 ..\data\data1\11_114y
+11_115y    11    泊松分布  True     2 ..\data\data1\11_115y
+11_116y    11    泊松分布  True     2 ..\data\data1\11_116y
+11_117y    11    泊松分布  True     2 ..\data\data1\11_117y
+11_118y    11    泊松分布  True     2 ..\data\data1\11_118y
+11_119y    11    泊松分布  True     2 ..\data\data1\11_119y
+11_120y    11    泊松分布  True     2 ..\data\data1\11_120y
+11_206y    11    泊松分布  True     2 ..\data\data1\11_206y
+11_210y    11    泊松分布  True     2 ..\data\data1\11_210y
+11_212y    11    泊松分布  True     2 ..\data\data1\11_212y
+11_221y    11    泊松分布  True     2 ..\data\data1\11_221y
+11_229y    11    泊松分布  True     2 ..\data\data1\11_229y
+11_234y    11    泊松分布  True     2 ..\data\data1\11_234y
+11_237y    11    泊松分布  True     2 ..\data\data1\11_237y
+11_238y    11    泊松分布  True     2 ..\data\data1\11_238y
+11_247y    11    泊松分布  True     2 ..\data\data1\11_247y
+11_257y    11    泊松分布  True     2 ..\data\data1\11_257y
+11_268y    11    泊松分布  True     2 ..\data\data1\11_268y
+ 11_86y    11    泊松分布  True     2  ..\data\data1\11_86y
+ 11_87y    11    泊松分布  True     2  ..\data\data1\11_87y
+ 11_88y    11    泊松分布  True     2  ..\data\data1\11_88y
+ 11_89y    11    泊松分布  True     2  ..\data\data1\11_89y
+ 11_90y    11    泊松分布  True     2  ..\data\data1\11_90y
+ 11_91y    11    泊松分布  True     2  ..\data\data1\11_91y
+ 11_92y    11    泊松分布  True     2  ..\data\data1\11_92y
+ 11_93y    11    泊松分布  True     2  ..\data\data1\11_93y
+ 11_94y    11    泊松分布  True     2  ..\data\data1\11_94y
+ 11_95y    11    泊松分布  True     3  ..\data\data1\11_95y
+ 11_96y    11    泊松分布  True     3  ..\data\data1\11_96y
+ 11_97y    11    泊松分布  True     3  ..\data\data1\11_97y
+ 11_98y    11    泊松分布  True     3  ..\data\data1\11_98y
+ 11_99y    11    泊松分布  True     3  ..\data\data1\11_99y
+ 12_121    12    正态分布 False     2  ..\data\data1\12_121
+ 12_122    12    正态分布 False     2  ..\data\data1\12_122
+ 12_123    12    正态分布 False     2  ..\data\data1\12_123
+ 12_124    12    正态分布 False     1  ..\data\data1\12_124
+ 12_125    12    正态分布 False     2  ..\data\data1\12_125
+ 12_126    12    正态分布 False     2  ..\data\data1\12_126
+ 12_127    12    正态分布 False     2  ..\data\data1\12_127
+ 12_128    12    正态分布 False     2  ..\data\data1\12_128
+ 12_129    12    正态分布 False     2  ..\data\data1\12_129
+ 12_130    12    正态分布 False     2  ..\data\data1\12_130
+ 12_131    12    正态分布 False     2  ..\data\data1\12_131
+ 12_132    12    正态分布 False     2  ..\data\data1\12_132
+ 12_133    12    正态分布 False     2  ..\data\data1\12_133
+ 12_134    12    正态分布 False     2  ..\data\data1\12_134
+ 12_135    12    正态分布 False     2  ..\data\data1\12_135
+ 12_136    12    正态分布 False     2  ..\data\data1\12_136
+ 12_137    12    正态分布 False     2  ..\data\data1\12_137
+ 12_138    12    正态分布 False     2  ..\data\data1\12_138
+ 12_139    12    正态分布 False     2  ..\data\data1\12_139
+ 12_140    12    正态分布 False     2  ..\data\data1\12_140
+ 12_141    12    正态分布 False     2  ..\data\data1\12_141
+ 12_142    12    正态分布 False     2  ..\data\data1\12_142
+ 12_143    12    正态分布 False     2  ..\data\data1\12_143
+ 12_144    12    正态分布 False     2  ..\data\data1\12_144
+ 12_145    12    正态分布 False     2  ..\data\data1\12_145
+ 12_146    12    正态分布 False     3  ..\data\data1\12_146
+ 12_147    12    正态分布 False     3  ..\data\data1\12_147
+ 12_148    12    正态分布 False     3  ..\data\data1\12_148
+ 12_149    12    正态分布 False     3  ..\data\data1\12_149
+ 12_150    12    正态分布 False     3  ..\data\data1\12_150
+ 12_151    12    正态分布 False     3  ..\data\data1\12_151
+ 12_152    12    正态分布 False     3  ..\data\data1\12_152
+ 12_153    12    正态分布 False     2  ..\data\data1\12_153
+ 12_154    12    正态分布 False     1  ..\data\data1\12_154
+ 12_155    12    正态分布 False     1  ..\data\data1\12_155
+ 12_226    12    正态分布 False     2  ..\data\data1\12_226
+12_156y    12    正态分布  True     2 ..\data\data1\12_156y
+12_157y    12    正态分布  True     2 ..\data\data1\12_157y
+12_158y    12    正态分布  True     2 ..\data\data1\12_158y
+12_159y    12    正态分布  True     2 ..\data\data1\12_159y
+12_160y    12    正态分布  True     2 ..\data\data1\12_160y
+12_161y    12    正态分布  True     2 ..\data\data1\12_161y
+12_162y    12    正态分布  True     2 ..\data\data1\12_162y
+12_163y    12    正态分布  True     2 ..\data\data1\12_163y
+12_164y    12    正态分布  True     2 ..\data\data1\12_164y
+12_165y    12    正态分布  True     2 ..\data\data1\12_165y
+12_166y    12    正态分布  True     2 ..\data\data1\12_166y
+12_167y    12    正态分布  True     2 ..\data\data1\12_167y
+12_168y    12    正态分布  True     3 ..\data\data1\12_168y
+12_169y    12    正态分布  True     3 ..\data\data1\12_169y
+12_170y    12    正态分布  True     1 ..\data\data1\12_170y
+12_171y    12    正态分布  True     1 ..\data\data1\12_171y
+12_172y    12    正态分布  True     1 ..\data\data1\12_172y
+12_173y    12    正态分布  True     1 ..\data\data1\12_173y
+12_174y    12    正态分布  True     1 ..\data\data1\12_174y
+12_175y    12    正态分布  True     1 ..\data\data1\12_175y
+12_176y    12    正态分布  True     2 ..\data\data1\12_176y
+12_177y    12    正态分布  True     2 ..\data\data1\12_177y
+12_178y    12    正态分布  True     2 ..\data\data1\12_178y
+12_179y    12    正态分布  True     2 ..\data\data1\12_179y
+12_180y    12    正态分布  True     2 ..\data\data1\12_180y
+12_181y    12    正态分布  True     2 ..\data\data1\12_181y
+12_182y    12    正态分布  True     2 ..\data\data1\12_182y
+12_183y    12    正态分布  True     2 ..\data\data1\12_183y
+12_184y    12    正态分布  True     2 ..\data\data1\12_184y
+12_185y    12    正态分布  True     2 ..\data\data1\12_185y
+12_186y    12    正态分布  True     2 ..\data\data1\12_186y
+12_187y    12    正态分布  True     2 ..\data\data1\12_187y
+12_188y    12    正态分布  True     2 ..\data\data1\12_188y
+12_189y    12    正态分布  True     2 ..\data\data1\12_189y
+12_190y    12    正态分布  True     2 ..\data\data1\12_190y
+12_191y    12    正态分布  True     2 ..\data\data1\12_191y
+12_192y    12    正态分布  True     2 ..\data\data1\12_192y
+12_193y    12    正态分布  True     2 ..\data\data1\12_193y
+12_194y    12    正态分布  True     2 ..\data\data1\12_194y
+12_195y    12    正态分布  True     2 ..\data\data1\12_195y
+12_196y    12    正态分布  True     2 ..\data\data1\12_196y
+12_197y    12    正态分布  True     2 ..\data\data1\12_197y
+12_198y    12    正态分布  True     2 ..\data\data1\12_198y
+12_199y    12    正态分布  True     2 ..\data\data1\12_199y
+12_200y    12    正态分布  True     2 ..\data\data1\12_200y
+12_208y    12    正态分布  True     2 ..\data\data1\12_208y
+12_209y    12    正态分布  True     2 ..\data\data1\12_209y
+12_213y    12    正态分布  True     2 ..\data\data1\12_213y
+12_214y    12    正态分布  True     2 ..\data\data1\12_214y
+12_216y    12    正态分布  True     2 ..\data\data1\12_216y
+12_218y    12    正态分布  True     2 ..\data\data1\12_218y
+12_219y    12    正态分布  True     2 ..\data\data1\12_219y
+12_220y    12    正态分布  True     2 ..\data\data1\12_220y
+12_223y    12    正态分布  True     2 ..\data\data1\12_223y
+12_227y    12    正态分布  True     2 ..\data\data1\12_227y
+12_232y    12    正态分布  True     2 ..\data\data1\12_232y
+12_233y    12    正态分布  True     2 ..\data\data1\12_233y
+12_235y    12    正态分布  True     2 ..\data\data1\12_235y
+12_236y    12    正态分布  True     2 ..\data\data1\12_236y
+12_239y    12    正态分布  True     2 ..\data\data1\12_239y
+12_243y    12    正态分布  True     2 ..\data\data1\12_243y
+12_245y    12    正态分布  True     2 ..\data\data1\12_245y
+12_246y    12    正态分布  True     2 ..\data\data1\12_246y
+12_248y    12    正态分布  True     2 ..\data\data1\12_248y
+12_249y    12    正态分布  True     2 ..\data\data1\12_249y
+12_251y    12    正态分布  True     2 ..\data\data1\12_251y
+12_252y    12    正态分布  True     2 ..\data\data1\12_252y
+12_253y    12    正态分布  True     2 ..\data\data1\12_253y
+12_254y    12    正态分布  True     2 ..\data\data1\12_254y
+12_256y    12    正态分布  True     2 ..\data\data1\12_256y
+12_258y    12    正态分布  True     2 ..\data\data1\12_258y
+12_259y    12    正态分布  True     2 ..\data\data1\12_259y
+12_260y    12    正态分布  True     2 ..\data\data1\12_260y
+12_261y    12    正态分布  True     2 ..\data\data1\12_261y
+12_262y    12    正态分布  True     2 ..\data\data1\12_262y
+12_263y    12    正态分布  True     2 ..\data\data1\12_263y
+12_264y    12    正态分布  True     2 ..\data\data1\12_264y
+12_266y    12    正态分布  True     2 ..\data\data1\12_266y
+12_267y    12    正态分布  True     2 ..\data\data1\12_267y
+12_270y    12    正态分布  True     2 ..\data\data1\12_270y
+ 13_201    13    指数分布 False     2  ..\data\data1\13_201
+ 13_202    13    指数分布 False     2  ..\data\data1\13_202
+ 13_203    13    指数分布 False     1  ..\data\data1\13_203
+13_204y    13    指数分布  True     2 ..\data\data1\13_204y
+13_205y    13    指数分布  True     2 ..\data\data1\13_205y
+13_207y    13    指数分布  True     2 ..\data\data1\13_207y
+13_211y    13    指数分布  True     2 ..\data\data1\13_211y
+13_215y    13    指数分布  True     2 ..\data\data1\13_215y
+13_240y    13    指数分布  True     2 ..\data\data1\13_240y
+13_255y    13    指数分布  True     2 ..\data\data1\13_255y
+14_224y    14 未知分布_14  True     2 ..\data\data1\14_224y
+14_228y    14 未知分布_14  True     2 ..\data\data1\14_228y
+15_241y    15 未知分布_15  True     2 ..\data\data1\15_241y
+15_250y    15 未知分布_15  True     2 ..\data\data1\15_250y
+
+4. 分布映射表:
+   1: 伯努利分布
+   2: 贝塔分布
+   3: 二项分布
+   4: 伽马分布
+   5: 高斯混合模型
+   6: 均匀分布
+   7: 卡方分布
+   8: 莱斯分布
+   9: 幂律分布
+   10: 帕累托分布
+   11: 泊松分布
+   12: 正态分布
+   13: 指数分布
